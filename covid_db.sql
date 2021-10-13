@@ -1,6 +1,15 @@
-CREATE DATABASE covid_db;
-CREATE SCHEMA registro_pruebas_data;
+--Crear la base de datos
+CREATE DATABASE project_covid; 
+
+-- Conectarse a la base de datos
+\c project_covid; 
+
+-- Crear un nuevo esquema
+CREATE SCHEMA registro_pruebas_data; 
+
+--Establecer el nuevo esquema de trabajo
 SET search_path TO registro_pruebas_data, public;
+
 
 CREATE TABLE departamento(
     dep_id SERIAL PRIMARY KEY,
